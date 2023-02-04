@@ -105,3 +105,46 @@ button a{
   height: 75px;
 }
 
+/*login html page styling */
+
+.login-page{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo-image{
+  margin-bottom: -70px;
+  margin-top: -90px;
+
+}
+form { 
+  margin: 0 auto;
+  background-color: #f2faff;
+  width: 300px;
+  
+} 
+.container { 
+  padding: 25px; 
+  border-radius: 5px;
+} 
+.login-btn { 
+       background-color: #58AEE8; 
+       width: 100%;
+        color: white; 
+        padding: 15px; 
+        margin: 10px 0px; 
+        border: none; 
+        cursor: pointer; 
+         } 
+
+ input[type=text], input[type=password] { 
+        width: 100%; 
+        margin: 8px 0;
+        padding: 12px 20px; 
+        display: inline-block; 
+        box-sizing: border-box; 
+    }
+ button:hover { 
+        opacity: 0.7; 
+    } 
+ 
