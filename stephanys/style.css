@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -5,63 +6,102 @@
 body{
   height: 100vh;
   
-  
+
 }
 .main{
-  width: 600px;
-  margin:0 auto;
-}
-
-.section{
-  width: 500px;
-  margin:0 auto;
-  height: 50%;
-  text-align: center;
+  background-color: #f2faff;
+  width: 393px;
+  margin: 50px auto;
+  border-radius: 60px;
+  border: 1px solid black;
+  padding:40px 20px 20px 10px;
  
 }
+
+
 .incident-title , .missing-person-title{
-  margin-top: 20px;
-  font-size: 24px;
-  margin-bottom: 20px;
-  padding: 30px 10px;
+  margin: 0 auto;
+  font-family: 'Abel', sans-serif;
+  width: 360px;
+  text-align: center;
+  padding: 5px ;
+  font-size: 18px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  
+}
+.call-link{
+  font-family: 'Abel', sans-serif;
+  font-size: 30px;
+  color: #FFFFFF;
+  margin: 20px auto;
+  padding: 10px 5px;
+  text-align: center;
+  background-color: #FF0000;
+  border:1px solid black;
+  box-shadow:rgba(0, 0, 0, 0.25) ;
+  width: 360px;
+  border-radius: 20px;
+
+
 }
 .incident-types{
-  width:100%;
+  background-color: #FFFFFF;
+  padding: 8px  10px 2px 10px;
+  width: 266px;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  
-  
-  column-gap: 1%;
-  align-items: center;
-  justify-items: center;
+  grid-template-columns: auto auto;
   text-align: center;
+  column-gap: 5%; 
+  margin: 20px auto;
 }
+.image-background-container{
+  background-color: #58AEE8;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.button-image{
+  width: 75px;
+  height: 82px; 
+}
+
 button{
-  width: 110px;
+  font-family: 'Abel', sans-serif;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100px;
   text-align: center;
-  background-color: #2a9d8f;
   border: none;
   border-radius: 4px;
   margin-top: 10px;
-  padding:10px 10px;
-  font-size: 18px;
-  font-weight: 600;
+  padding:0px 10px;
+  font-size: 13px;
+  
 }
 button a{
   text-decoration: none;
-  color: #fff;
-
+  color: black;
 }
 
 .missing-profiles{
-  width: 100%;
+  width: 360px;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  height: 30vh;
-  column-gap: 1%;
+  grid-template-columns:  auto auto auto;
+  margin: 20px auto;
+  
   
 }
-p{
-  padding: 10px;
-  font-size: 24px;
+.profile-card{
+  width: 100px;
+  text-align: center;
+  padding: 20px auto;
+  margin: 10px auto;
+  
 }
+
+.missing-person-image{
+  width: 75px;
+  height: 75px;
+}
+
