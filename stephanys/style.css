@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
+  
+  
+}
+.main{
+  width: 500px;
+  margin:0 auto;
+  padding:20px;
+  
+}
+
+.section{
+  width: 400px;
+  margin:0 auto;
+  height: 50%;
+  text-align: center;
+  
+  
+}
+.incident-title , .missing-person-title{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 30px 10px;
+}
+.incident-types{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  height: 40vh;
+  margin: 10px;
+  padding:10px;
+  column-gap: 10%;
+}
+
+.missing-profiles{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  height: 30vh;
+  column-gap: 12%;
+  
+}
