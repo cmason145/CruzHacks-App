@@ -9,6 +9,7 @@ body{
 
 }
 .main{
+  
   background-color: #f2faff;
   width: 393px;
   margin: 50px auto;
@@ -108,7 +109,7 @@ button a{
 /*login html page styling */
 
 .login-page{
-  margin: 0 auto;
+  margin: 40px auto;
   text-align: center;
 }
 
