@@ -290,7 +290,7 @@ input{
    border: none; 
    cursor: pointer; 
     } 
-    /*--------------------Incidents Page Styling--------------*/
+    /*--------------------Incidents Log Page Styling--------------*/
 
     .incident-log-title{
       margin: 30px auto;
@@ -308,4 +308,4 @@ input{
       margin: 0 auto;
     }
 
-  
+  /*-----------------------
