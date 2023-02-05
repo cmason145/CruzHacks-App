@@ -26,7 +26,7 @@ body{
   width: 360px;
   text-align: center;
   padding: 5px ;
-  font-size: 24px;
+  font-size: 28px;
   background-color: #FFFFFF;
   border-radius: 20px;
   
@@ -34,7 +34,8 @@ body{
 .call-link{
   font-family: 'Abel', sans-serif;
   font-size: 30px;
-text-shadow: 2px 4px 0px black;
+text-shadow: 1px 1px black;
+
   color: hsl(0, 0%, 100%);
   margin: 20px auto;
   padding: 10px 5px;
@@ -45,7 +46,11 @@ text-shadow: 2px 4px 0px black;
   width: 360px;
   border-radius: 20px;
 
-
+}
+.call-link a{
+  text-shadow: 2px 2px black;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 .incident-types{
   background-color: #FFFFFF;
@@ -55,7 +60,7 @@ text-shadow: 2px 4px 0px black;
   grid-template-columns: auto auto;
   text-align: center;
   column-gap: 5%; 
-  margin: 20px auto;
+  margin: 30px auto;
 }
 .image-background-container{
   background-color: #58AEE8;
@@ -90,7 +95,7 @@ button a{
   width: 360px;
   display: grid;
   grid-template-columns:  auto auto auto;
-  margin: 20px auto;
+  margin: 30px auto;
   
   
 }
@@ -107,7 +112,7 @@ button a{
   height: 75px;
 }
 footer{
-display: block;
+  display: block;
   text-align: center;
   border-bottom-right-radius: 60px;
   border-bottom-left-radius: 60px;
@@ -119,11 +124,15 @@ ul{
   text-align: center;
   border-radius: 40px;
   border: 1px solid black;
+  list-style: none;
 }
 li{
   display: inline-block;
   list-style: none;
   padding-inline: 10px;
+}
+li img{
+  width: 50px;
   
 }
 
