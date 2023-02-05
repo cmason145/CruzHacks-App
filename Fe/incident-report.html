@@ -8,114 +8,147 @@
     <title>iPhone 14 Pro</title>
     <!--CSS Style-->
     <link rel="stylesheet" href="incident-report.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
   </head>
-    <body>
-        <div class="iphone">
-            <div class="iphone-14">
-                <div class="operator-name">
-                    CruzHacks 2023
-                </div>
-                <div class="dynamic-island"></div>
-                <!-- <div class="dynamic-island-camera"></div> -->
-                <div class="operator-icons">
-                    <i class="bi bi-reception-4"></i>   5G
-                    <div class="battery">
-                        100
-                    </div>
-                </div>
-
-                <div class="incident-report">
-                    File an Incident Report
-                </div>
-
-                <input type="upload-image" value="Upload Image">
-                <div class="description-prompt">
-                    Add description of attacker:
-                </div>
-
-                <div class="description-background">
-
-                    <div class="name-fields">
-                        <form action="form_sent.php" method="post">
-                            <input name="first name" type="first-name" placeholder="First Name"> 
-                            <input name="last name" type="last-name" placeholder="Last Name">
-                        </form>
-                    </div>
-
-                    <div class="height-weight-fields">
-                        <form action="form_sent.php" method="post">
-                            <input name="height" type="height" placeholder="Height">
-                            in.
-                            <input name="weight" type="weight" placeholder="Weight">
-                            lbs.
-                        </form>
-                    </div>
-
-                    <div class="hair-eye-color-fields">
-                        <form action="form_sent.php" method="post">
-                            <input name="hair color" type="hair-color" placeholder="Hair color">
-                            <input name="eye color" type="eye-color" placeholder="Eye color">
-                        </form>
-                    </div>
-
-                    <div class="clothes-location-description">
-                        <form action="form_sent.php" method="post">
-                            <input name="clothes" type="clothes" placeholder="Clothes last seen wearing"> <br>
-                            <input name="location" type="location" placeholder="Location of occurence"> <br>
-                            <input name="description" type="description" placeholder="Description of incident"> <br>
-                        </form>
-                    </div>
-
-                </div>
-                
-                <input type="add-attacker" value="   + Add another attacker">
-                
-                <div class="sharing-options">
-                    Share anonymously to UC IC community?
-                    <div class="checkbox"> <input type="checkbox"> </div> <br>
-                    Would you like to share this information with UCSC Campus Police?
-                    <div class="checkbox"> <input type="checkbox"> </div><br>
-                    Would you like to share this information with Santa Cruz County Police?
-                    <div class="checkbox"> <input type="checkbox"> </div> <br>
-                </div>
-                
-                <div class="submit-button">
-                        <!-- <form action="form_sent.php" method="post"> -->
-                            <a href="../stephanys/index.html">
-                                <input type="submit"> 
-                            </a>
-                        <!-- </form> -->
-                </div>
-
-
-
-            </div>
+  <body>
+    <div class="iphone">
+      <div class="iphone-14">
+        <div class="operator-name">CruzHacks 2023</div>
+        <div class="dynamic-island"></div>
+        <!-- <div class="dynamic-island-camera"></div> -->
+        <div class="operator-icons">
+          <i class="bi bi-reception-4"></i> 5G
+          <div class="battery">100</div>
         </div>
-        
+
+        <div class="incident-report">File an Incident Report</div>
+
+        <input type="upload-image" value="Upload Image" />
+        <div class="description-prompt">Add description of attacker:</div>
+
+        <div class="description-background">
+          <div class="name-fields">
+            <form action="form_sent.php" method="post">
+              <input
+                name="first name"
+                type="first-name"
+                placeholder="First Name"
+              />
+              <input
+                name="last name"
+                type="last-name"
+                placeholder="Last Name"
+              />
+            </form>
+          </div>
+
+          <div class="height-weight-fields">
+            <form action="form_sent.php" method="post">
+              <input name="height" type="height" placeholder="Height" />
+              in.
+              <input name="weight" type="weight" placeholder="Weight" />
+              lbs.
+            </form>
+          </div>
+
+          <div class="hair-eye-color-fields">
+            <form action="form_sent.php" method="post">
+              <input
+                name="hair color"
+                type="hair-color"
+                placeholder="Hair color"
+              />
+              <input
+                name="eye color"
+                type="eye-color"
+                placeholder="Eye color"
+              />
+            </form>
+          </div>
+
+          <div class="clothes-location-description">
+            <form action="form_sent.php" method="post">
+              <input
+                name="clothes"
+                type="clothes"
+                placeholder="Clothes last seen wearing"
+              />
+              <br />
+              <input
+                name="location"
+                type="location"
+                placeholder="Location of occurence"
+              />
+              <br />
+              <input
+                name="description"
+                type="description"
+                placeholder="Description of incident"
+              />
+              <br />
+            </form>
+          </div>
+        </div>
+
+        <input type="add-attacker" value="   + Add another attacker" />
+
+        <div class="sharing-options">
+          Share anonymously to UC IC community?
+          <div class="checkbox"><input type="checkbox" /></div>
+          <br />
+          Would you like to share this information with UCSC Campus Police?
+          <div class="checkbox"><input type="checkbox" /></div>
+          <br />
+          Would you like to share this information with Santa Cruz County
+          Police?
+          <div class="checkbox"><input type="checkbox" /></div>
+          <br />
+        </div>
+
+        <div class="submit-button">
+          <!-- <form action="form_sent.php" method="post"> -->
+          <a href="../stephanys/thankyou.html">
+            <input type="submit" />
+          </a>
+          <!-- </form> -->
+        </div>
+      </div>
+    </div>
+
     <script src="incident-report.js"></script>
-    </body>
+  </body>
 
-    <footer>
-        <div>
-            <ul>
-                <li>
-                    <a href="../stephanys/incidents.html"><img src="../images/incidents-logo.png" /></a>
-                </li>
-                <li>
-                    <a href="#"><img src="../images/missing-persons-gallery.png" /></a>
-                </li>
-                <li>
-                    <a href="../stephanys/map.html"><img src="../images/map.png" /></a>
-                </li>
-                <li>
-                    <a href="../stephanys/index.html"><img src="../images/home.png" /></a>
-                </li>
-            </ul>
-        </div>
-    </footer>
+  <footer>
+    <div>
+      <ul>
+        <li>
+          <a href="../stephanys/incidents.html"
+            ><img src="../images/incidents-logo.png"
+          /></a>
+        </li>
+        <li>
+          <a href="#"><img src="../images/missing-persons-gallery.png" /></a>
+        </li>
+        <li>
+          <a href="../stephanys/map.html"><img src="../images/map.png" /></a>
+        </li>
+        <li>
+          <a href="../stephanys/index.html"><img src="../images/home.png" /></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 </html>

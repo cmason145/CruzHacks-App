@@ -353,3 +353,15 @@ input{
     font-size: 30px;
   }
 /*9372ba43c72591df3f360bbc3a42c0f577ee2e80*/
+
+/*------------ Thank You Page-------------*/
+.thank-you-container{
+border: 2px solid black;
+background-color: white;
+width: 80%;
+height: 50%;
+margin: 0 auto;
+position: relative;
+top: 40px;
+
+}
