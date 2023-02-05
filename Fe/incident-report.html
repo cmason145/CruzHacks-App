@@ -39,15 +39,56 @@
                 </div>
 
                 <div class="description-background">
-                    <form action="form_sent.php" method="post">
-                        <input name="first name" type="first-name" placeholder="First Name"> 
-                        <input name="last name" type="last-name" placeholder="Last Name">
-                        <input name="height" type="height" placeholder="Height">
-                        <input type="submit"> 
-                    </form>
-                </div>
 
+                    <div class="name-fields">
+                        <form action="form_sent.php" method="post">
+                            <input name="first name" type="first-name" placeholder="First Name"> 
+                            <input name="last name" type="last-name" placeholder="Last Name">
+                        </form>
+                    </div>
+
+                    <div class="height-weight-fields">
+                        <form action="form_sent.php" method="post">
+                            <input name="height" type="height" placeholder="Height">
+                            in.
+                            <input name="weight" type="weight" placeholder="Weight">
+                            lbs.
+                        </form>
+                    </div>
+
+                    <div class="hair-eye-color-fields">
+                        <form action="form_sent.php" method="post">
+                            <input name="hair color" type="hair-color" placeholder="Hair color">
+                            <input name="eye color" type="eye-color" placeholder="Eye color">
+                        </form>
+                    </div>
+
+                    <div class="clothes-location-description">
+                        <form action="form_sent.php" method="post">
+                            <input name="clothes" type="clothes" placeholder="Clothes last seen wearing"> <br>
+                            <input name="location" type="location" placeholder="Location of occurence"> <br>
+                            <input name="description" type="description" placeholder="Description of incident"> <br>
+                        </form>
+                    </div>
+
+                </div>
                 
+                <input type="add-attacker" value="   + Add another attacker">
+                
+                <div class="sharing-options">
+                    Share anonymously to UC IC community?
+                    <div class="checkbox"> <input type="checkbox"> </div> <br>
+                    Would you like to share this information with UCSC Campus Police?
+                    <div class="checkbox"> <input type="checkbox"> </div><br>
+                    Would you like to share this information with Santa Cruz County Police?
+                    <div class="checkbox"> <input type="checkbox"> </div> <br>
+                </div>
+                
+                <div class="submit-button">
+                        <form action="form_sent.php" method="post">
+                            <input type="submit"> 
+                        </form>
+                </div>
 
 
 
