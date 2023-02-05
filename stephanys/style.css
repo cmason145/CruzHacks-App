@@ -16,7 +16,7 @@ body{
   border-radius: 47px;
   position: relative;
   border: 5px solid black;
-  padding:40px 20px 20px 10px;
+  /* padding:40px 20px 0px 0px; */
 
  
 }
@@ -78,8 +78,6 @@ body{
   top: 0px;
   right: -28px;
 }
-
-
 
 .incident-title , .missing-person-title{
   margin: 50px auto;
@@ -172,6 +170,7 @@ button a{
   width: 75px;
   height: 75px;
 }
+
 footer{
   position: absolute;
   bottom: 0;
@@ -180,24 +179,28 @@ footer{
   text-align: center;
   border-bottom-right-radius: 60px;
   border-bottom-left-radius: 60px;
- margin:0 auto;
 }
+
 ul{
   background-color: #58AEE8;
   padding-bottom: 5px;
   text-align: center;
   border-radius: 40px;
-  border: 1px solid black;
+  border: none;
   list-style: none;
+  float: center;
+  width: 100%;
+  margin-top: 18px;
 }
+
 li{
   display: inline-block;
   list-style: none;
   padding-inline: 10px;
 }
+
 li img{
-  width: 50px;
-  
+  width: 50px;  
 }
 
 /*login html page styling */
