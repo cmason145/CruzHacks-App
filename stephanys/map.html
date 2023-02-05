@@ -16,18 +16,7 @@
         5G
         <div class="battery">100</div>
       </div>
-      <div class="google-maps">
-        <iframe
-          width="350"
-          height="250"
-          frameborder="0"
-          style="border: 0"
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps/embed/v1/MAP_MODE?key=YOUR_API_KEY&PARAMETERS"
-          allowfullscreen
-        >
-        </iframe>
-      </div>
+      <div class="google-maps" id="map"></div>
       <div class="comment-section">
         <div class="comment-info">
           <a href="#" class="comment-author">someguy14</a>
@@ -43,14 +32,14 @@
         <div class="comment-body">
           <p>I saw her by the parking lot about 1 hour ago, she was alone 🤷🏽‍♀️</p>
         </div>
-
-        <!-- Comment 1 end -->
-
-        <div class="insert-comment-box">
-          <input type="text" name="comment" placeholder="insert comment here" />
-          <button class="submit-btn" type="submit">Submit</button>
-        </div>
       </div>
+      <!-- Comment 1 end -->
+
+      <div class="insert-comment-box">
+        <input type="text" name="comment" placeholder="insert comment here" />
+        <button class="submit-btn" type="submit">Submit</button>
+      </div>
+
       <footer>
         <div>
           <ul>
@@ -70,5 +59,10 @@
         </div>
       </footer>
     </section>
+    <script src="script.js"></script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrn_NM_nsRsWuSqa_9ZCH5geIIIs2Ic1Q&map_ids=28128416ff9651c8&callback=initMap"
+    ></script>
   </body>
 </html>
