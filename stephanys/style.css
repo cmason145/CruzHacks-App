@@ -16,7 +16,7 @@ body{
   border-radius: 47px;
   position: relative;
   border: 5px solid black;
-  padding:40px 20px 20px 10px;
+  /* padding:40px 20px 0px 0px; */
 
  
 }
@@ -78,8 +78,6 @@ body{
   top: 0px;
   right: -28px;
 }
-
-
 
 .incident-title , .missing-person-title{
   margin: 50px auto;
@@ -172,6 +170,7 @@ button a{
   width: 75px;
   height: 75px;
 }
+
 footer{
   position: absolute;
   bottom: 0;
@@ -180,24 +179,28 @@ footer{
   text-align: center;
   border-bottom-right-radius: 60px;
   border-bottom-left-radius: 60px;
- margin:0 auto;
 }
+
 ul{
   background-color: #58AEE8;
   padding-bottom: 5px;
   text-align: center;
   border-radius: 40px;
-  border: 1px solid black;
+  border: none;
   list-style: none;
+  float: center;
+  width: 100%;
+  margin-top: 18px;
 }
+
 li{
   display: inline-block;
   list-style: none;
   padding-inline: 10px;
 }
+
 li img{
-  width: 50px;
-  
+  width: 50px;  
 }
 
 /*login html page styling */
@@ -292,6 +295,7 @@ input{
     } 
     /*--------------------Incidents Log Page Styling--------------*/
 
+
     .incident-log-title{
       margin: 30px auto;
       font-family: 'Abel', sans-serif;
@@ -308,4 +312,41 @@ input{
       margin: 0 auto;
     }
 
-  /*-----------------------
+  
+
+  .incident-log-title{
+    margin: 30px auto;
+    font-family: 'Abel', sans-serif;
+    width: 360px;
+    text-align: center;
+    padding: 5px ;
+    font-size: 28px;
+    border-radius: 20px;
+  }
+  .incident-log-bg{
+    width: 360px;
+    height: 620px;
+    background-color: #FFFFFF; 
+    margin: 0 auto;
+    border-radius: 5px;
+    padding-top: 15px;
+    /* padding-left: 15px; */
+  }
+  
+  .incident-bg {
+    height: 130px;
+    width: 320px;
+    background-color: #58AEE8;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-left: 10px;
+    margin: 15px;
+  }
+  
+  .text {
+    color: black;
+    position: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 30px;
+  }
+/*9372ba43c72591df3f360bbc3a42c0f577ee2e80*/

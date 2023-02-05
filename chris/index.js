@@ -27,4 +27,43 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+const inputFile = document.getElementById("input-file");
+const driveButton = document.getElementById("drive-button");
+const progressBar = document.getElementById("progress-bar");
+const statusIcon = document.getElementById("status-icon");
+const fileInfo = document.getElementById("file-info");
 
+inputFile.addEventListener("change", handleFileUpload);
+driveButton.addEventListener("click", handleDriveUpload);
+
+const addProfileToFirestore = async (
+  firstName,
+  lastName,
+  height,
+  weight,
+  lastSeenWearing,
+  comments,
+  selectedFile
+) => {
+  const db = firebase.firestore();
+  const profilesRef = db.collection("mp_report");
+  const newProfileRef = profilesRef.doc();
+  const profileId = newProfileRef.id;
+  const storageRef = firebase.storage().ref();
+  const fileRef = storageRef.child(`${profileId}/${selectedFile.name}`);
+  const uploadTask = fileRef.put(selectedFile);
+
+  await uploadTask.then(() => {
+    fileRef.getDownloadURL().then(async downloadURL => {
+      await newProfileRef.set({
+        firstName,
+        lastName,
+        height,
+        weight,
+        lastSeenWearing,
+        comments,
+        profileImageURL: downloadURL
+      });
+    });
+  });
+};
