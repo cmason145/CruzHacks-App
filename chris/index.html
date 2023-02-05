@@ -8,84 +8,127 @@
 
     <script defer src = "index.js"></script>
   </head>
+    <style>
+      h1 {
+        text-align: center;
+        font-size: 36px;
+      }
+      .gray-box {
+        width: 40%;
+        margin: 0 auto;
+        border-radius: 30px;
+        padding: 74px 60px;
+        background-color: rgb(217, 217, 217);
+        text-align: center;
+      }
+      .blue-box {
+        width: 50%;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: rgb(163, 216, 241);
+        color: white;
+      }
+      .transparent-box {
+        width: 50%;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+      }
+      .input-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+      }
+      .checkbox-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+      label {
+        font-size: 18px;
+      }
+      input[type="text"] {
+        padding: 5px;
+        font-size: 18px;
+        width: 45%;
+      }
+      textarea {
+        padding: 5px;
+        font-size: 18px;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .green-box {
+        width: 50px;
+        height: 50px;
+        background-color: green;
+        color: white;
+        text-align: center;
+        margin: 20px auto;
+        padding-top: 15px;
+      }
+      button {
+        padding: 10px;
+        font-size: 18px;
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+
   <body>
-    <h1 align = "center">Missing!</h1>
-    <!-- <div class = "container" align = "center">
-        <td>
-            Upload Photo
-        </td>
-        <form id="uploadbanner" enctype="multipart/form-data" method="post" action="#">
-            <input id="fileupload" name="myfile" type="file" />
-            <input type="submit" value="submit" id="submit" />
-         </form>
-    </div> -->
-
-    <div class = "container" align = "center">
-        <label for="file-input">
-            <i class="fa fa-upload" aria-hidden="true"></i>
-            Upload Image
-        </label>
-        <input id="file-input" type="file" style="display: none;">
+    <h1>File a Missing Persons Report</h1>
+    <div class="gray-box" align="center">
+        <div class = "container" align = "center">
+            <label for="file-input">
+                <i class="fa fa-upload" aria-hidden="true"></i>
+                Upload Image
+            </label>
+            <input id="file-input" type="file" style="display: none;">
+        </div>
     </div>
-
-    <div class = "container" align = "center">
-        <h1>
-            Add Information
-        </h1>
-        <table bgcolor="#00FF00" border="1" align="center">
-            <tr>
-                <td>First Name: </td>
-                <td><input type="text" name="fname" id="fname"></td>
-            </tr>
-
-            <tr>
-                <td>Last Name: </td>
-                <td><input type="text" name=lname" id="lname"></td>
-            </tr>
-
-            <tr>
-                <td>Height: </td>
-                <td><input type="text" name="height" id="height"></td>
-                <td> in</td>
-            </tr>
-
-            <tr>
-                <td>Weight: </td>
-                <td><input type="text" name=weight" id="weight"></td>
-                <td> lbs</td>
-            </tr>
-
-            <tr>
-                <td>Hair Color: </td>
-                <td><input type="text" name="hcolor" id="hcolor"></td>
-            </tr>
-
-            <tr>
-                <td>Eye Color: </td>
-                <td><input type="text" name=ecolor" id="ecolor"></td>
-            </tr>
-
-            <tr>
-                <td>Clothes last seen wearing: </td>
-                <td><input type="text" name="clothes" id="clothes"></td>
-            </tr>
-
-            <tr>
-                <td>Last Seen At: </td>
-                <td><input type="text" name=lastseen" id="lastseen"></td>
-            </tr>
-            <tr>
-                <td>Additional Comments: </td>
-                <td><input type="text" name=comments" id="comments"></td>
-            </tr>
-
-            <tr>
-                <td>&nbsp</td>
-                <td align="center"><input type="button" value="Submit" name="submit" id="submit"/></td>
-            </tr>
-
-        </table>
+    <p align = "center">Add Description: </p>
+    <div class="blue-box">
+      <div class="input-container">
+        <input type="text" placeholder="First name">
+        <input type="text" placeholder="Last name">
+      </div>
+      <div class="input-container">
+        <input type="text" placeholder="Height">
+        <input type="text" placeholder="Weight">
+      </div>
+      <div class="input-container">
+        <input type="text" placeholder="Hair color">
+        <input type="text" placeholder="Eye color">
+      </div>
+      <div class="input-container">
+        <input type="text" placeholder="Clothes last seen wearing">
+      </div>
+      <div class="input-container">
+        <input type="text" placeholder="Last seen at....">
+      </div>
+      <textarea placeholder="Additional Comments: "></textarea>
     </div>
+    <div class = "transparent-box">
+        <div class="checkbox-container">
+            <label>
+            <input type="checkbox">
+            Would you like to share this information with UCSC Campus police?
+            </label>
+        </div>
+
+        <div class="checkbox-container">
+            <label>
+            <input type="checkbox">
+            Would you like to share information this with Santa Cruz police?
+            </label>
+        </div>
+
+        <div align="right">
+            <button style="background-color: green; color: white;">Submit</button>
+        </div>
+      </div>
   </body>
 </html>
 
