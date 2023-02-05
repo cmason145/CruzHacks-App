@@ -290,3 +290,20 @@ input{
    border: none; 
    cursor: pointer; 
     } 
+    /*--------------------Incidents Page Styling--------------*/
+
+    .incident-log-title{
+      margin: 30px auto;
+      font-family: 'Abel', sans-serif;
+      width: 360px;
+      text-align: center;
+      padding: 5px ;
+      font-size: 28px;
+      border-radius: 20px;
+    }
+    .incident-log{
+      width: 360px;
+      height: 520px;
+      background-color: #FFFFFF; 
+      margin: 0 auto;
+    }
