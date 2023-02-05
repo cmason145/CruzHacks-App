@@ -295,18 +295,38 @@ input{
     } 
     /*--------------------Incidents Page Styling--------------*/
 
-    .incident-log-title{
-      margin: 30px auto;
-      font-family: 'Abel', sans-serif;
-      width: 360px;
-      text-align: center;
-      padding: 5px ;
-      font-size: 28px;
-      border-radius: 20px;
-    }
-    .incident-log{
-      width: 360px;
-      height: 520px;
-      background-color: #FFFFFF; 
-      margin: 0 auto;
-    }
+  .incident-log-title{
+    margin: 30px auto;
+    font-family: 'Abel', sans-serif;
+    width: 360px;
+    text-align: center;
+    padding: 5px ;
+    font-size: 28px;
+    border-radius: 20px;
+  }
+  .incident-log-bg{
+    width: 360px;
+    height: 620px;
+    background-color: #FFFFFF; 
+    margin: 0 auto;
+    border-radius: 5px;
+    padding-top: 15px;
+    /* padding-left: 15px; */
+  }
+  
+  .incident-bg {
+    height: 130px;
+    width: 320px;
+    background-color: #58AEE8;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-left: 10px;
+    margin: 15px;
+  }
+  
+  .text {
+    color: black;
+    position: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 30px;
+  }
