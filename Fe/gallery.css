@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: arial; */
+  }
+  
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ffffff;
+  }
+  
+  .iphone{
+    border: 4px solid #3b444b;
+    border-radius: 50px;
+  }
+  
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .iphone-14{
+    width: 393px;
+    height: 852px;
+    border: 5px solid black;
+    background: #F2FAFF;
+    /* background-image: url("https://raw.githubusercontent.com/zouraiz523/iphone-14-pro-max/main/Phone%2014%20Pro%20Max%20and%20Dynamic%20Island/img-bg.webp"); */
+    background-repeat: no-repeat;
+    background-size: 301px 600px;
+    border-radius: 47px;
+    position: relative;
+  }
+  
+  .operator-name{
+    position: absolute;
+    top: 16px;
+    left: 30px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .dynamic-island{
+    width: 126px;
+    height: 36px;
+    background: black;
+    border-radius: 50px;
+    margin: 0 auto;
+    margin-top: 10px;
+    position: center;
+    left: 100px;
+    z-index: 99999;
+    transition: all .5s;
+  }
+
+
+  .operator-icons{
+    position: absolute;
+    top: 16px;
+    right: 70px;
+    font-size: 14px;
+    transition: all .2s;
+    color: rgb(0, 0, 0);
+  }
+  
+  .battery{
+    width: 20px;
+    height: 10px;
+    border: 2px solid white;
+    border-radius: 4px;
+    font-size: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background: #000000;
+    font-weight: bold;
+    position: absolute;
+    top: 0px;
+    right: -28px;
+  }
+
+  .gallery {
+    font-size: 30px;
+    font-family: 'Abel', sans-serif;
+    margin-left: 60px;
+    margin-top: 20px;
+  }
+
+  .gallery-background{
+    text-align: center;
+    width: 360px;
+    height: 620px;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 16px;
+    padding-top: 14px;
+  }
+  
+  /* .headshot-bg {
+    background-color: #58AEE8;
+    width: 100px;
+    height: 100px;
+    margin-left: 27px;
+    border-radius: 5px; 
+    padding-top: 25px;
+  } */
+
+  .person {
+    position: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    display: inline-block;
+    width: 40%;
+  }
+
+footer{
+  position: absolute;
+  /* bottom: 0; */
+  margin-top: 770px;
+  width: 393px;
+  height: 5.5rem;
+  text-align: center;
+  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+}
+
+ul{
+  background-color: #58AEE8;
+  padding-bottom: 5px;
+  text-align: center;
+  border-radius: 40px;
+  border: none;
+  list-style: none;
+  float: center;
+  width: 100%;
+  margin-top: 18px;
+}
+
+li{
+  display: inline-block;
+  list-style: none;
+  padding-inline: 10px;
+}
+
+li img{
+  width: 50px;  
+}

@@ -1,76 +1,119 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Missing Page!</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iPhone 14 Pro</title>
+    <!--CSS Style-->
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-
-    <script defer src = "index.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
   </head>
+    <body>
+        <div class="iphone">
+            <div class="iphone-14">
+                <div class="operator-name">
+                    CruzHacks 2023
+                </div>
+                <div class="dynamic-island"></div>
+                <!-- <div class="dynamic-island-camera"></div> -->
+                <div class="operator-icons">
+                    <i class="bi bi-reception-4"></i>   5G
+                    <div class="battery">
+                        100
+                    </div>
+                </div>
 
-  <body>
-    <h1>File a Missing Persons Report</h1>
-    <div class="gray-box" align="center">
-        <!-- <div class = "container" align = "center">
-            <label for="file-input">
-                <i class="fa fa-upload" aria-hidden="true"></i>
-                Upload Image
-            </label>
-            <input id="file-input" type="file" style="display: none;">
-        </div> -->
-        <div class="wrapper" align="center">
-            <label for="file-input">
-                <i class="fa fa-upload" aria-hidden="true"></i>
-                Upload Image
-            </label>
-            <input id="file-input" type="file" style="display: none;">
-            <section class="progress-area"></section>
-            <section class="uploaded-area"></section>
-        </div>
-    </div>
+                <div class="incident-report">
+                    File an Missing Persons Report
+                </div>
 
-    <p align = "center">Add Description: </p>
-    <div class="blue-box">
-      <div class="input-container">
-        <input id = "fname" type="text" placeholder="First name">
-        <input id = "lname" type="text" placeholder="Last name">
-      </div>
-      <div class="input-container">
-        <input id="height" type="text" placeholder="Height">
-        <input id="weight" type="text" placeholder="Weight">
-      </div>
-      <div class="input-container">
-        <input id="hcolor" type="text" placeholder="Hair color">
-        <input id="ecolor" type="text" placeholder="Eye color">
-      </div>
-      <div class="input-container">
-        <input id="clothes" type="text" placeholder="Clothes last seen wearing">
-      </div>
-      <div class="input-container">
-        <input id="last_seen" type="text" placeholder="Last seen at....">
-      </div>
-      <textarea id="comments" placeholder="Additional Comments: "></textarea>
-    </div>
-    <div class = "transparent-box">
-        <div class="checkbox-container">
-            <label>
-            <input id="ucsc_police_share" type="checkbox">
-            Would you like to share this information with UCSC Campus police?
-            </label>
-        </div>
+                <input type="upload-image" value="Upload Image">
+                <div class="description-prompt">
+                    Add description:
+                </div>
 
-        <div class="checkbox-container">
-            <label>
-            <input id="sc_police_share" type="checkbox">
-            Would you like to share information this with Santa Cruz police?
-            </label>
-        </div>
+                <div class="description-background">
 
-        <div align="right">
-            <button style="background-color: green; color: white;">Submit</button>
+                    <div class="name-fields">
+                        <form action="form_sent.php" method="post">
+                            <input name="first name" type="first-name" placeholder="First Name"> 
+                            <input name="last name" type="last-name" placeholder="Last Name">
+                        </form>
+                    </div>
+
+                    <div class="height-weight-fields">
+                        <form action="form_sent.php" method="post">
+                            <input name="height" type="height" placeholder="Height">
+                            in.
+                            <input name="weight" type="weight" placeholder="Weight">
+                            lbs.
+                        </form>
+                    </div>
+
+                    <div class="hair-eye-color-fields">
+                        <form action="form_sent.php" method="post">
+                            <input name="hair color" type="hair-color" placeholder="Hair color">
+                            <input name="eye color" type="eye-color" placeholder="Eye color">
+                        </form>
+                    </div>
+
+                    <div class="clothes-location-description">
+                        <form action="form_sent.php" method="post">
+                            <input name="clothes" type="clothes" placeholder="Clothes last seen wearing"> <br>
+                            <input name="location" type="location" placeholder="Last seen at..."> <br>
+                            <input name="description" type="description" placeholder="Additional comments"> <br>
+                        </form>
+                    </div>
+
+                </div>
+                
+                <!-- <input type="add-attacker" value="   + Add another attacker"> -->
+                
+                <div class="sharing-options">
+                    <!-- Share anonymously to UC IC community?
+                    <div class="checkbox"> <input type="checkbox"> </div> <br> -->
+                    Would you like to share this information with UCSC Campus Police?
+                    <div class="checkbox"> <input type="checkbox"> </div><br>
+                    Would you like to share this information with Santa Cruz County Police?
+                    <div class="checkbox"> <input type="checkbox"> </div> <br>
+                </div>
+                
+                <div class="submit-button">
+                        <form action="form_sent.php" method="post">
+                            <input type="submit"> 
+                        </form>
+                </div>
+
+
+
+            </div>
         </div>
-      </div>
-  </body>
+        
+    <script src="incident-report.js"></script>
+    </body>
+
+    <footer>
+        <div>
+            <ul>
+                <li>
+                    <a href="../stephanys/incidents.html"><img src="../images/incidents-logo.png" /></a>
+                </li>
+                <li>
+                    <a href="../Fe/gallery.html"><img src="../images/missing-persons-gallery.png" /></a>
+                </li>
+                <li>
+                    <a href="../stephanys/map.html"><img src="../images/map.png" /></a>
+                </li>
+                <li>
+                    <a href="../stephanys/index.html"><img src="../images/home.png" /></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </html>
-

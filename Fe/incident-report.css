@@ -118,6 +118,10 @@
     font-size: 10px;
   }
 
+  input {
+    padding-left: 4px;
+  }
+  
   input[type=first-name] {
     border: none;
     background-color: white;
