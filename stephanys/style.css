@@ -9,7 +9,7 @@ body{
 
 }
 .main{
-  
+  height:700px;
   background-color: #f2faff;
   width: 393px;
   margin: 50px auto;
@@ -26,7 +26,7 @@ body{
   width: 360px;
   text-align: center;
   padding: 5px ;
-  font-size: 18px;
+  font-size: 24px;
   background-color: #FFFFFF;
   border-radius: 20px;
   
@@ -34,7 +34,8 @@ body{
 .call-link{
   font-family: 'Abel', sans-serif;
   font-size: 30px;
-  color: #FFFFFF;
+text-shadow: 2px 4px 0px black;
+  color: hsl(0, 0%, 100%);
   margin: 20px auto;
   padding: 10px 5px;
   text-align: center;
@@ -105,17 +106,38 @@ button a{
   width: 75px;
   height: 75px;
 }
+footer{
+display: block;
+  text-align: center;
+  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+ margin:0;
+}
+ul{
+  background-color: #58AEE8;
+  padding-bottom: 5px;
+  text-align: center;
+  border-radius: 40px;
+  border: 1px solid black;
+}
+li{
+  display: inline-block;
+  list-style: none;
+  padding-inline: 10px;
+  
+}
 
 /*login html page styling */
 
 .login-page{
+  height:700px;
   margin: 40px auto;
   text-align: center;
 }
 
 .logo-image{
-  margin-bottom: -70px;
-  margin-top: -90px;
+  margin-bottom: -50px;
+  margin-top: -70px;
 
 }
 form { 
